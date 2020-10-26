@@ -11,9 +11,9 @@ class LinkedList {
         this.size = 0
     }
 
-    add(element){
-        let node = new Node (element) // create new node
-        let current // store current node
+    addElement(element){
+        let node = new Node (element) 
+        let current 
 
         if(this.head === null){
             this.head = node 
@@ -25,6 +25,26 @@ class LinkedList {
             current.next = node
         }
         this.size++
+    }
+
+    removeElement(element){
+        let current = this.head
+        let previous = null
+
+        while(current !== null){
+            if(current.element === element){
+                if(previous.next === null){
+                    this.head = current.next
+                } else {
+                    previous.next = current.next
+                }
+                this.size--
+                return current.element
+            }
+            previous = current
+            current = current.next
+        }
+        return - 1
     }
    
 }
