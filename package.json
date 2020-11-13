@@ -1,0 +1,25 @@
+{
+  "name": "algopractice",
+  "version": "1.0.0",
+  "description": "This is a repo dedicated to practcing and tracking progress with algorithm and data set practice.",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinneyer/algo-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinneyer/algo-practice/issues"
+  },
+  "homepage": "https://github.com/kevinneyer/algo-practice#readme"
+}
