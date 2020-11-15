@@ -5,7 +5,7 @@
  * target = 33
  */
 
- const findTarget = (array, target) => {
+ module.exports = (array, target) => {
    let mid = Math.floor( array.length / 2 )
 
    while( array.length !== 0){
