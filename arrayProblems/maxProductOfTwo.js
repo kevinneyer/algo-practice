@@ -4,7 +4,8 @@
  */
 
  // Initial Brute Force 
- const maxProduct = (nums) => {
+ module.exports = {
+     maxProduct : (nums) => {
     let maximum = 0
     
     for(let i = 0; i < nums.length; i++){
@@ -15,11 +16,12 @@
         }
     }
     return maximum
-}
+},
 
 // Refactored with sort operator 
-const maxProductTwo = (nums) => {
+ maxProductTwo: (nums) => {
     let sortedArray = nums.sort((a,b) => a < b ? -1 : 1)
         
     return (sortedArray[sortedArray.length - 1] - 1) * (sortedArray[sortedArray.length - 2] - 1)
+}
 }
