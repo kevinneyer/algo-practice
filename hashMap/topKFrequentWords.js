@@ -33,3 +33,5 @@ const topKFrequent = (words, k) => {
 
    return answer.splice(answer.length - k)
 };
+
+module.exports = topKFrequent
