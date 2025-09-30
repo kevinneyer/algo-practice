@@ -4,7 +4,7 @@ function reverseString(s: string[]): void {
     let sCopy: Array<string> = JSON.parse(JSON.stringify(s));
 
     while (i < s.length) {
-        s[i] = sCopy[j];
+        s[i] = sCopy[j]!;
         i++;
         j--;
     }
