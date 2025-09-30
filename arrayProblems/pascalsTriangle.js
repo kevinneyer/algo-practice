@@ -2,7 +2,7 @@
 
 // In Pascal's triangle, each number is the sum of the two numbers directly above it.
 
-function generate(numRows) {
+function generateRows(numRows) {
     // Declare return array.
     let returnArray = [];
     // Declare previousRow variable here so that we can scope correctly for usage in loop.
